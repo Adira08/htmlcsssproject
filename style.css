@@ -1,0 +1,58 @@
+body{
+    background-color: black;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+.navbar a{
+    text-decoration: none;
+    color: white;
+    border: 2px solid white;
+    height: 20px;
+    width: 23%;
+    font-size: large;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #313333;
+    transition-duration: 1s;
+    transition-property: all;
+
+}
+
+.navbar a:hover{
+    background-color: white;
+    color: #313333;
+}
+
+.box{
+    width: 150px;
+    height: 150px;
+    background-color: #CCDE72;
+    margin: auto;
+    border-radius: 50%;
+    margin-top: 15%;
+    margin-bottom: 15%;
+    animation-name: colourchange;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    transition-duration: 1s;
+    transition-property: all;
+
+
+}
+
+@keyframes colourchange{
+    0% { background-color: #CCDE72;}
+    20% { background-color: #AB4EE4;}
+    40% { background-color: #E44EDD;}
+    60% { background-color: #F14646;}
+    80% { background-color: #84EA64;}
+    100% { background-color: #64EADA;}
+}
+
+.box:hover{
+    border-radius: 0;
+}
